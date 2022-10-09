@@ -6,7 +6,7 @@ const url = "https://jsonplaceholder.typicode.com/todos";
 
 const TodoList = () => {
 	const [todos, setTodos] = useState([]);
-  const [selectedTodo, setSelectedTodo] = useState();
+	const [selectedTodo, setSelectedTodo] = useState();
 
 	useEffect(() => {
 		fetch(url)
@@ -33,17 +33,17 @@ const TodoList = () => {
 	};
 
 
-  const remove = (todo) => {
-    if (window.confirm("Silmek üzerisiniz emin misiniz")) {
-      setTodos(prev => {
-        return prev.filter(x => x.id != todo.id)
-      })
-    }
-  }
+	const remove = (todo) => {
+		if (window.confirm("Silmek üzerisiniz emin misiniz")) {
+			setTodos(prev => {
+				return prev.filter(x => x.id != todo.id)
+			})
+		}
+	}
 
-  const edit = (todo) => {
-    setSelectedTodo(todo);
-  }
+	const edit = (todo) => {
+		setSelectedTodo(todo);
+	}
 
 	const renderBody = () => {
 		return (
@@ -56,8 +56,8 @@ const TodoList = () => {
 							<td>{todo.completed ? "Tamamlandı" : "Yapılacak"}</td>
 							<td>
 								<Button
-                  className={`btn btn-sm btn-danger ${classes.actionButton} `}
-                  onClick={() => remove(todo)}
+									className={`btn btn-sm btn-danger ${classes.actionButton} `}
+									onClick={() => remove(todo)}
 								>
 									Sil
 								</Button>
@@ -71,22 +71,22 @@ const TodoList = () => {
 	};
 
 
-  const renderEditForm = () => {
-    return (
-      <div>
-        <input type={"text"}/>
-        <inpu type="check" />
-        <Button>Kaydet</Button>
-        <Button onClick={() => setSelectedTodo(undefined)}>Vazgeç</Button>
-      </div>
-    )
-  }
+	const renderEditForm = () => {
+		return (
+			<div>
+				<input type={"text"} />
+				<inpu type="check" />
+				<Button>Kaydet</Button>
+				<Button onClick={() => setSelectedTodo(undefined)}>Vazgeç</Button>
+			</div>
+		)
+	}
 	return (
-    <div className={`${classes.container} container`}>
-      { selectedTodo && renderEditForm()}
+		<div className={`${classes.container} container`}>
+			{selectedTodo && renderEditForm()}
 			<table className="table">
 				{renderThead()}
-        {renderBody()}
+				{renderBody()}
 			</table>
 		</div>
 	);
