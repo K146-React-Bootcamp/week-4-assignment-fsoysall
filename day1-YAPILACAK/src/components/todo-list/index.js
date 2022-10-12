@@ -15,7 +15,7 @@ const TodoList = () => {
 				setTodos(todos);
 			})
 			.catch((err) => {
-				console.log(err);
+				'console.log(err);
 			});
 	}, []);
 
