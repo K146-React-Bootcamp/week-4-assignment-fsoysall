@@ -7,6 +7,6 @@ day1 klasörü içerisindeki örneğe düzenleme, sıralama ve sayfalama işleml
 
 Context Api kullanılarak, react projesi oluşturulacak ve basit bir light-dark tema örneği yapılacak.
 
-## custom event
+## custom event : YAPILDI
 
 Javascript ile custom event örneği yapılacak ve açıklanacak.
