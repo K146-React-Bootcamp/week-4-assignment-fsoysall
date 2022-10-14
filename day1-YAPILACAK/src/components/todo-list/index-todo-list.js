@@ -237,8 +237,7 @@ const TodoList = () => {
 
 	//#endregion
 
-
-	//#region Sıralama
+	//#region Sıralama 
 
 	/* export  */  const SiralamaTH = () => {
 		return (
