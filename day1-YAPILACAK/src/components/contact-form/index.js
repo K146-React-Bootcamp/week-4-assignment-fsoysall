@@ -9,7 +9,7 @@ const ContactForm = (props) => {
 	const submit = (event) => {
 		event.preventDefault();
 
-		'console.log({
+		console.log({
       email,
       message
 		});
