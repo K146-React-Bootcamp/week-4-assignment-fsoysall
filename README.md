@@ -1,9 +1,24 @@
-# DAY1 : Component ile Düzenleme, sayfalama, sıralama : YAPILDI
+# Ödev 4 ; Github push
 
-day1 klasörü içerisindeki örneğe düzenleme, sıralama ve sayfalama işlemleri eklenecek.
+git init
 
-# light-dark tema : YAPILDI
-Context Api kullanılarak, react projesi oluşturulacak ve basit bir light-dark tema örneği yapılacak.
+git add README.md
 
-# custom event : YAPILDI
-Javascript ile custom event örneği yapılacak ve açıklanacak.
+
+git commit -m "first commit"
+
+git branch -M master
+
+git remote add origin https://github.com/K146-React-Bootcamp/week-4-assignment-fsoysall.git
+
+git push -u origin master
+
+git push -u origin master
+
+
+
+
+
+
+
+
