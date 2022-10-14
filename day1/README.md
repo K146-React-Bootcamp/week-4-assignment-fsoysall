@@ -3,4 +3,3 @@
 day1 klasörü içerisindeki örneğe düzenleme, sıralama ve sayfalama işlemleri eklenecek.
 
 ## YAPILDI
-
