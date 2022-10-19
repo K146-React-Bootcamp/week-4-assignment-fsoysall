@@ -1,4 +1,4 @@
-# Hafta Ödev 4'leri : TAMAMLANDI
+# Ödev 4 ; Github push
 
 ## Hafta 4 2. gün ödevleri
 
